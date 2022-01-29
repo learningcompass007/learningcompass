@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Confidence Interval calculation using t statistic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/images/favicon.png">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    <li><a href="/" class="">Home</a></li>
+    <li><a href="/courses/" class="">Courses</a></li>
+    <li><a href="/team/" class="">Team</a></li>
+    
+   
+    <li><a href="/posts/" class="current">Blog</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>
+  </ul>
+</div>
+  
+  <div id="wrapper" class="wrapper">
+    <div class='header header-extra'>
+  <div class="container">
+    <div class="logo">
+      
+    </div>
+    <div class="logo-mobile">
+      
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    <li><a href="/" class="">Home</a></li>
+    <li><a href="/courses/" class="">courses</a></li>
+    <li><a href="/team/" class="">About Us</a></li>
+   
+    <li><a href="/posts/" class="current">Blog</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="container pt-4 pt-md-10"">
+     <div class="col-12 col-md-8 mb-1">
+      <div class="service service-summary">
+        <div class="service service-single">
+          <h2 class="title">
+            Confidence Interval calculation using t statistic
+          </h2>
+          <div class="content"><p>We would understand the confidence interval calculation through an example when the population standard deviation is not known, but the sample standard deviation is known.</p>
+
+<h2 id="large-drug-store-weekly-sales">Large Drug Store Weekly Sales</h2>
+
+<p>A large drug store wants to estimate average weekly sales for a brand of soap.A random sample of 13 weeks gives the following numbers:123,110,95,120,87,89,100,105,98,88,75,125,101.Give a 90% confidence interval for a weekly basis.</p>
+
+<p><strong>Probability outside the confidence interval is referred to as \(\alpha\).We wish to construct a (1-\(\alpha\)) confidence interval for the population mean</strong></p>
+
+<p>A (1-\(\alpha\)) confidence interval for the population mean is provided by</p>
+
+<p>\(\bar x\) - \(\lvert t_{\alpha/2} \rvert\) s / \(\sqrt{n}\) &lt; \(\mu\) &lt; \(\bar x\) + \(\lvert t_{\alpha/2}\rvert\) s/ \(\sqrt{n}\)</p>
+
+<hr />
+
+<p>We calculate \(\bar x\) = 101.2307692 and s = 15.13359313
+and n = 13</p>
+
+<h3 id="90">90%</h3>
+
+<p>(1-\(\alpha\)) confidence interval = 90%</p>
+
+<p>\(\alpha\) = 10% and \(\alpha/2\) = 5% or 0.05</p>
+
+<p>The t value corressponding to 0.05 is -1.9596 which can be obtained in excel with the formula</p>
+
+<blockquote>
+  <p>T.INV(probability, degrees of freedom -1)</p>
+</blockquote>
+
+<p>T.INV(0.5,13-1) =1.782287556</p>
+
+<p>Therefore 90% confidence interval is between</p>
+
+<ul>
+  <li>
+    <p>101.2307692 -1.782287556 *15.13359313/ squareroot(13)  =93.74996737</p>
+  </li>
+  <li>
+    <p>101.2307692 +1.782287556 *15.13359313/ squareroot(13) = 108.7115711</p>
+  </li>
+</ul>
+</div>
+        </div>
+      </div>
+    </div>
+ </div>
+    <style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100% - 2rem); background: #222; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to 
+        improve the functionality of this website.</span>
+        <a id="cookie-notice-accept" class="button">Approve</a>
+        <a href="/privacy/" class="button">More info</a></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        /*This function will load script and call the callback once the script has loaded*/
+function loadScriptAsync(scriptSrc, callback) {
+    if (typeof callback !== 'function') {
+        throw new Error('Not a valid callback for async script load');
+    }
+    var script = document.createElement('script');
+    script.onload = callback;
+    script.src = scriptSrc;
+    document.head.appendChild(script);
+}
+
+/* This is the part where you call the above defined function and "call back" your code which gets executed after the script has loaded */
+loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=UA-217924078-1', function(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-217924078-1', { 'anonymize_ip': true });
+})
+    } else {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+  </div>
+
+  <div id="wrapper2" class="wrapper">
+    <style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100% - 2rem); background: #222; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to 
+        improve the functionality of this website.</span>
+        <a id="cookie-notice-accept" class="button">Approve</a>
+        <a href="/privacy/" class="button">More info</a></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        /*This function will load script and call the callback once the script has loaded*/
+function loadScriptAsync(scriptSrc, callback) {
+    if (typeof callback !== 'function') {
+        throw new Error('Not a valid callback for async script load');
+    }
+    var script = document.createElement('script');
+    script.onload = callback;
+    script.src = scriptSrc;
+    document.head.appendChild(script);
+}
+
+/* This is the part where you call the above defined function and "call back" your code which gets executed after the script has loaded */
+loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=UA-217924078-1', function(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-217924078-1', { 'anonymize_ip': true });
+})
+    } else {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+  </div>
+  
+  <div class="footer-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer">
+          <h3 class="footer-title">Learning Compass</h3>
+          <ul class="footer-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li class="copyright">© Learning Compass 2022</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="sub-footer-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer">
+          <ul>
+            
+            <li><strong>Email: </strong><a href="mailto:connect@learningcompass.co.uk">
+                connect@learningcompass.co.uk</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://learningcompass.co.uk">learningcompass.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  <script type="text/javascript" src="/assets/js/contactus.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+  
+</body>
+</html>

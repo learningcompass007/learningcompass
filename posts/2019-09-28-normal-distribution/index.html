@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Six Sigma</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/images/favicon.png">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    <li><a href="/" class="">Home</a></li>
+    <li><a href="/courses/" class="">Courses</a></li>
+    <li><a href="/team/" class="">Team</a></li>
+    
+   
+    <li><a href="/posts/" class="current">Blog</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>
+  </ul>
+</div>
+  
+  <div id="wrapper" class="wrapper">
+    <div class='header header-extra'>
+  <div class="container">
+    <div class="logo">
+      
+    </div>
+    <div class="logo-mobile">
+      
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    <li><a href="/" class="">Home</a></li>
+    <li><a href="/courses/" class="">courses</a></li>
+    <li><a href="/team/" class="">About Us</a></li>
+   
+    <li><a href="/posts/" class="current">Blog</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="container pt-4 pt-md-10"">
+     <div class="col-12 col-md-8 mb-1">
+      <div class="service service-summary">
+        <div class="service service-single">
+          <h2 class="title">
+            Six Sigma
+          </h2>
+          <div class="content"><p>What is Six Sigma ? How is it related to Statistics ?</p>
+
+<p>To understand this we understand the concepts of</p>
+<ul>
+  <li>Continuous Random Variable</li>
+  <li>Normal distribution</li>
+  <li>Standard Normal distribution</li>
+</ul>
+
+<div class="alert alert-success" role="alert">
+ Continuous Random Variable
+</div>
+
+<p>A <strong>continuous random variable</strong> X is one that can assume an infinite number of values within any given interval. The probability that X falls within any interval is given by the area under the probability distribution (or density function) within that interval.</p>
+
+<div class="alert alert-success" role="alert">
+ Normal Distribution
+</div>
+
+<p>The <strong>normal distribution</strong> is a continuous probability distribution and the most commonly used distribution in statistical analysis. The normal curve is <strong>bell-shaped and symmetrical about its mean</strong>. It extends indefinitely in both directions, but most of the area (probability) is clustered around the mean 68.26% of the area (probability) under the normal curve is included within one standard deviation of the mean (i.e., within μ ± 1σ), 95.44% within μ ± 2σ, and 99.74% within μ ± 3σ.</p>
+
+<div class="alert alert-success" role="alert">
+ Standard Normal Distribution
+</div>
+
+<p>The <strong>standard normal distribution</strong> is a normal distribution with a mean of 0 and a standard deviation of 1 (i.e., μ = 0 and σ = 1). Any normal distribution can be converted into a standard normal distribution by letting μ = 0 and expressing deviations from μ in standard deviation units (z scale).</p>
+
+<div class="alert alert-success" role="alert">
+ Six Sigma (6σ)
+</div>
+
+<p><strong>Six Sigma</strong> is a quality-control methodology developed in 1986 by Motorola, Inc. The method uses a data-driven review to limit mistakes or defects in and process. Six Sigma emphasizes cycle-time improvement while at the same time reducing manufacturing defects to a level of no more than 3.4 occurrences per million units or events. In other words, the system is a method to work faster with fewer mistakes.</p>
+
+<p>Six Sigma points to the fact that, mathematically, <strong>it would take a six-standard-deviation event from the mean for an error to happen</strong>. Only 3.4 out of a million randomly (and normally) distributed, events along a bell curve would fall outside of six-standard-deviations.</p>
+
+</div>
+        </div>
+      </div>
+    </div>
+ </div>
+    <style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100% - 2rem); background: #222; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to 
+        improve the functionality of this website.</span>
+        <a id="cookie-notice-accept" class="button">Approve</a>
+        <a href="/privacy/" class="button">More info</a></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        /*This function will load script and call the callback once the script has loaded*/
+function loadScriptAsync(scriptSrc, callback) {
+    if (typeof callback !== 'function') {
+        throw new Error('Not a valid callback for async script load');
+    }
+    var script = document.createElement('script');
+    script.onload = callback;
+    script.src = scriptSrc;
+    document.head.appendChild(script);
+}
+
+/* This is the part where you call the above defined function and "call back" your code which gets executed after the script has loaded */
+loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=UA-217924078-1', function(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-217924078-1', { 'anonymize_ip': true });
+})
+    } else {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+  </div>
+
+  <div id="wrapper2" class="wrapper">
+    <style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100% - 2rem); background: #222; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to 
+        improve the functionality of this website.</span>
+        <a id="cookie-notice-accept" class="button">Approve</a>
+        <a href="/privacy/" class="button">More info</a></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        /*This function will load script and call the callback once the script has loaded*/
+function loadScriptAsync(scriptSrc, callback) {
+    if (typeof callback !== 'function') {
+        throw new Error('Not a valid callback for async script load');
+    }
+    var script = document.createElement('script');
+    script.onload = callback;
+    script.src = scriptSrc;
+    document.head.appendChild(script);
+}
+
+/* This is the part where you call the above defined function and "call back" your code which gets executed after the script has loaded */
+loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=UA-217924078-1', function(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-217924078-1', { 'anonymize_ip': true });
+})
+    } else {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+  </div>
+  
+  <div class="footer-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer">
+          <h3 class="footer-title">Learning Compass</h3>
+          <ul class="footer-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li class="copyright">© Learning Compass 2022</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="sub-footer-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer">
+          <ul>
+            
+            <li><strong>Email: </strong><a href="mailto:connect@learningcompass.co.uk">
+                connect@learningcompass.co.uk</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://learningcompass.co.uk">learningcompass.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  <script type="text/javascript" src="/assets/js/contactus.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+  
+</body>
+</html>

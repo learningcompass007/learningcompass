@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Normal Probability distribution and examples</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="/images/favicon.png">
+  <link href="/assets/css/style.css" rel="stylesheet">
+</head>
+<body class='page '>
+  <div id="main-menu-mobile" class="main-menu-mobile">
+  <ul>
+    <li><a href="/" class="">Home</a></li>
+    <li><a href="/courses/" class="">Courses</a></li>
+    <li><a href="/team/" class="">Team</a></li>
+    
+   
+    <li><a href="/posts/" class="current">Blog</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>
+  </ul>
+</div>
+  
+  <div id="wrapper" class="wrapper">
+    <div class='header header-extra'>
+  <div class="container">
+    <div class="logo">
+      
+    </div>
+    <div class="logo-mobile">
+      
+    </div>
+    <div id="main-menu" class="main-menu">
+  <ul>
+    <li><a href="/" class="">Home</a></li>
+    <li><a href="/courses/" class="">courses</a></li>
+    <li><a href="/team/" class="">About Us</a></li>
+   
+    <li><a href="/posts/" class="current">Blog</a></li>
+    <li><a href="/contact/" class="">Contact</a></li>
+  </ul>
+</div>
+    <button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+  </div>
+</div>
+    <div class="container pt-4 pt-md-10"">
+     <div class="col-12 col-md-8 mb-1">
+      <div class="service service-summary">
+        <div class="service service-single">
+          <h2 class="title">
+            Normal Probability distribution and examples
+          </h2>
+          <div class="content"><p>Normal distribution is characterised by mean \(\mu\) and standard deviation \(\sigma\)</p>
+
+<p><img src="../../assets/images/normal-distribution/normal.png" /></p>
+
+<p>No matter what \(\mu\) and standard deviation \(\sigma\)  is,</p>
+<ul>
+  <li>
+    <p>the area between \(\mu + \sigma\)  and \(\mu - \sigma\) is 68%</p>
+  </li>
+  <li>
+    <p>the area between \(\mu + 2\sigma\)  and \(\mu - 2\sigma\) is 95%</p>
+  </li>
+  <li>
+    <p>the area between \(\mu + 3\sigma\)  and \(\mu - 3\sigma\) is 97%</p>
+  </li>
+</ul>
+
+<h2 id="standard-normal-distribution">Standard Normal Distribution</h2>
+
+<p>The standard normal distribution is characterised by \(\mu\) of <strong>0</strong> and \(\sigma\) is <strong>1</strong>.</p>
+
+<p>All normal distributions can be converted into standard normal distribution by subtracting the mean and dividing by the standard deviation.</p>
+
+<p>Z = (X - \(\mu\)) / \(\sigma\)</p>
+
+<h2 id="birth-weights-example">Birth Weights example</h2>
+
+<div class="img_row">
+	<img class="col three" src="../../assets/images/normal-distribution/birth-weight.jpg" />
+</div>
+
+<p>If Birth weights in a population are normally distributed with a mean of 109 oz and a standard deviation of 13 oz,</p>
+
+<h3 id="question">Question</h3>
+
+<p>What is the chance of having birth weights of <strong>141 oz and higher</strong>  when sampling birth records at random ?</p>
+
+<h3 id="solution">Solution</h3>
+
+<p>Z score of 141 = ( 141 - 109)/13 = 2.46</p>
+
+<p>Probability of the weight 141 and lower corresponding to Z score of 2.46 is 0.99305</p>
+
+<p>Probability of the weight 141 and higher 1- 0.99305=.00695 
+which is 0.695%</p>
+
+<h3 id="question-1">Question</h3>
+
+<p>What is the chance of having birth weights of <strong>120 oz and lighter</strong>  when sampling birth records at random ?</p>
+
+<h3 id="solution-1">Solution</h3>
+
+<p>Z score of 120 = ( 120 - 109)/13 = 0.846153846</p>
+
+<p>Probability of the weight 120 and lower corresponding to Z score of 0.846153846 is 0.79955  which is around 79.95%</p>
+
+<h2 id="sat-score-example">SAT score example</h2>
+
+<p>For example if we wanted to know the math score that corresponded to the 90th percentile ( assuming a mean score of 500 and standard deviation of 50) ?</p>
+
+<p>In the Z table we would find the Z score corressponding to the probability of 0.9 which would be 1.28.</p>
+
+<p>Z = (X - \(\mu\)) / \(\sigma\)</p>
+
+<p>1.28 = (X - 500)/50</p>
+
+<p>Therefore X = 500 + 50*1.28 = 500 + 64 = 564</p>
+</div>
+        </div>
+      </div>
+    </div>
+ </div>
+    <style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100% - 2rem); background: #222; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to 
+        improve the functionality of this website.</span>
+        <a id="cookie-notice-accept" class="button">Approve</a>
+        <a href="/privacy/" class="button">More info</a></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        /*This function will load script and call the callback once the script has loaded*/
+function loadScriptAsync(scriptSrc, callback) {
+    if (typeof callback !== 'function') {
+        throw new Error('Not a valid callback for async script load');
+    }
+    var script = document.createElement('script');
+    script.onload = callback;
+    script.src = scriptSrc;
+    document.head.appendChild(script);
+}
+
+/* This is the part where you call the above defined function and "call back" your code which gets executed after the script has loaded */
+loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=UA-217924078-1', function(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-217924078-1', { 'anonymize_ip': true });
+})
+    } else {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+  </div>
+
+  <div id="wrapper2" class="wrapper">
+    <style>
+    #cookie-notice {padding: 0.5rem 1rem; display: none; text-align: center; position: fixed; bottom: 0; width: calc(100% - 2rem); background: #222; color: rgba(255,255,255,0.8);}
+    #cookie-notice a {display: inline-block; cursor: pointer; margin-left: 0.5rem;}
+    @media (max-width: 767px) {
+        #cookie-notice span {display: block; padding-top: 3px; margin-bottom: 1rem;}
+        #cookie-notice a {position: relative; bottom: 4px;}
+    }
+</style>
+<div id="cookie-notice">
+    <span>We would like to use third party cookies and scripts to 
+        improve the functionality of this website.</span>
+        <a id="cookie-notice-accept" class="button">Approve</a>
+        <a href="/privacy/" class="button">More info</a></div>
+<script>
+    function createCookie(name,value,days) {
+        var expires = "";
+        if (days) {
+            var date = new Date();
+            date.setTime(date.getTime() + (days*24*60*60*1000));
+            expires = "; expires=" + date.toUTCString();
+        }
+        document.cookie = name + "=" + value + expires + "; path=/";
+    }
+    function readCookie(name) {
+        var nameEQ = name + "=";
+        var ca = document.cookie.split(';');
+        for(var i=0;i < ca.length;i++) {
+            var c = ca[i];
+            while (c.charAt(0)==' ') c = c.substring(1,c.length);
+            if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
+        }
+        return null;
+    }
+    function eraseCookie(name) {
+        createCookie(name,"",-1);
+    }
+
+    if(readCookie('cookie-notice-dismissed')=='true') {
+        /*This function will load script and call the callback once the script has loaded*/
+function loadScriptAsync(scriptSrc, callback) {
+    if (typeof callback !== 'function') {
+        throw new Error('Not a valid callback for async script load');
+    }
+    var script = document.createElement('script');
+    script.onload = callback;
+    script.src = scriptSrc;
+    document.head.appendChild(script);
+}
+
+/* This is the part where you call the above defined function and "call back" your code which gets executed after the script has loaded */
+loadScriptAsync('https://www.googletagmanager.com/gtag/js?id=UA-217924078-1', function(){
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-217924078-1', { 'anonymize_ip': true });
+})
+    } else {
+        document.getElementById('cookie-notice').style.display = 'block';
+    }
+    document.getElementById('cookie-notice-accept').addEventListener("click",function() {
+        createCookie('cookie-notice-dismissed','true',31);
+        document.getElementById('cookie-notice').style.display = 'none';
+        location.reload();
+    });
+
+</script>
+
+  </div>
+  
+  <div class="footer-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="footer">
+          <h3 class="footer-title">Learning Compass</h3>
+          <ul class="footer-menu">
+            <li><a href="/">Home</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <li class="copyright">© Learning Compass 2022</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  <div class="sub-footer-strip">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="sub-footer">
+          <ul>
+            
+            <li><strong>Email: </strong><a href="mailto:connect@learningcompass.co.uk">
+                connect@learningcompass.co.uk</a></li>
+          </ul>
+          <ul>
+            <li><a href="https://learningcompass.co.uk">learningcompass.co.uk</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript" src="/assets/js/scripts.js"></script>
+  <script type="text/javascript" src="/assets/js/contactus.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML" type="text/javascript"></script>
+  
+</body>
+</html>
